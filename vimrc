@@ -77,8 +77,9 @@ set statusline+=%<%P                         " file position
 " ---- Opening Files ----
 let g:fuzzy_ignore = "vendor/**/*,tmp/**/*,*.log"
 let g:fuzzy_matching_limit = 70
-map <leader>b :FuzzyFinderBuffer<CR>
-map <leader>t :FuzzyFinderTextMate<CR>
+map <leader>b :FufBuffer<CR>
+map <leader>t :FufFile<CR>
+map <leader>q :FufQuickfix<CR>
 
 " Store temporary files in a central spot
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
@@ -86,7 +87,7 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 
 " ---- Searching ----
-map <leader>f :Ack\ --ignore-dir=tmp\ --ignore-dir=vendor
+map <leader>f :Ack --ignore-dir=tmp --ignore-dir=vendor<space>
 
 
 " ---- Editing ----
