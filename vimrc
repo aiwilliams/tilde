@@ -45,7 +45,7 @@ autocmd BufRead,BufNewFile Capfile set filetype=ruby
 autocmd BufRead,BufNewFile Gemfile set filetype=ruby
 
 " Tree on specified directory/bookmark
-map <leader>nt :NERDTree
+map <leader>nt :NERDTree<space>
 
 " Open tree on current directory
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
@@ -87,7 +87,7 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 
 " ---- Searching ----
-map <leader>f :Ack --ignore-dir=tmp --ignore-dir=vendor<space>
+map <leader>f :Ack<space>
 
 
 " ---- Editing ----
