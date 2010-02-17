@@ -55,13 +55,11 @@ map <leader>R :NERDTreeFind<CR>
 
 " Set options if a gui is running
 if has("gui_running")
-  set guifont=Inconsolata:h14
   set guioptions+=TlRLrb
   set guioptions-=TlRLrb
-  colorscheme desert
-else
-  colorscheme default
 endif
+
+colorscheme desert256
 
 set statusline=
 set statusline+=%-3.3n\                      " buffer number
@@ -87,8 +85,9 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 
 " ---- Searching ----
-map <leader>f :Ack<space>
-
+nmap <leader>f :Ack<space>
+nmap <leader>w :Ack<space><cword><CR>
+nmap <leader>rw :Ack<space>--type=ruby<space><cword><CR>
 
 " ---- Editing ----
 
@@ -100,5 +99,7 @@ nmap <silent> <leader>s :set nolist!<CR>
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
+
 " ---- Running rake ----
 map <leader>r :Rake<CR>
+map <leader>R :.Rake<CR>
