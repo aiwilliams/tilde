@@ -8,6 +8,7 @@
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+set hidden
 
 " use subdirectories under ~/.vim/bundle
 "
@@ -19,6 +20,8 @@ set nocompatible
 call pathogen#runtime_append_all_bundles()
 
 filetype plugin on
+
+:runtime macros/matchit.vim
 
 let mapleader = ","
 imap ;; <Esc>
@@ -44,14 +47,31 @@ autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead,BufNewFile Capfile set filetype=ruby
 autocmd BufRead,BufNewFile Gemfile set filetype=ruby
 
+" Restore cursor position
+autocmd BufReadPost *
+  \ if line("'\"") > 1 && line("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
+  \ endif
+
+" NERDtree plugin
 " Tree on specified directory/bookmark
 map <leader>nt :NERDTree<space>
-
 " Open tree on current directory
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-
 " Reveal current file in tree
 map <leader>R :NERDTreeFind<CR>
+
+
+" Tags
+" TODO Learn to use tags beyond the TlistToggle...
+" See http://sites.google.com/site/daveparillo/software-development/vim/ctags
+"set tags=./tags
+"map <leader>gt :execute
+
+" Taglist plugin
+let Tlist_Show_One_File = 1
+map <leader>S :TlistToggle<CR><C-W>h
+let tlist_javascript_settings='javascript;v:globals;c:classes;f:functions;m:methods;p:properties;r:protoype'
 
 " Set options if a gui is running
 if has("gui_running")
@@ -73,8 +93,9 @@ set statusline+=%<%P                         " file position
 
 
 " ---- Opening Files ----
-let g:fuzzy_ignore = "vendor/**/*,tmp/**/*,*.log"
-let g:fuzzy_matching_limit = 70
+let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|log|DS_Store|gdbinit)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|vendor|tmp|\.(sass-cache|gdb|bundle)'
+let g:fuf_enumerating_limit = 70
+let g:fuf_maxMenuWidth = 150
 map <leader>b :FufBuffer<CR>
 map <leader>t :FufFile<CR>
 map <leader>q :FufQuickfix<CR>
@@ -87,7 +108,12 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " ---- Searching ----
 nmap <leader>f :Ack<space>
 nmap <leader>w :Ack<space><cword><CR>
+vmap <leader>w "ry:Ack<space>"<C-r>r"<CR>
 nmap <leader>rw :Ack<space>--type=ruby<space><cword><CR>
+
+" Substitution
+nmap <leader>r :%s/<C-r><C-w>/
+vmap <leader>r "ry:%s/<C-r>r/
 
 " ---- Editing ----
 
@@ -98,8 +124,3 @@ nmap <silent> <leader>s :set nolist!<CR>
 " Scroll the viewport faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
-
-
-" ---- Running rake ----
-map <leader>r :Rake<CR>
-map <leader>R :.Rake<CR>
