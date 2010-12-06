@@ -52,6 +52,11 @@ autocmd BufReadPost *
   \ if line("'\"") > 1 && line("'\"") <= line("$") |
   \   exe "normal! g`\"" |
   \ endif
+" Persistent UNDO
+if v:version >= 703 " Only available in Vim 7.3 or greater
+  set undofile
+  set undodir=~/.vim/.undo
+endif
 
 " NERDtree plugin
 " Tree on specified directory/bookmark
@@ -77,6 +82,7 @@ let tlist_javascript_settings='javascript;v:globals;c:classes;f:functions;m:meth
 if has("gui_running")
   set guioptions+=TlRLrb
   set guioptions-=TlRLrb
+  set guifont=Monaco:h14
 endif
 
 colorscheme desert256
