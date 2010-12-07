@@ -98,12 +98,12 @@ let tlist_javascript_settings='javascript;v:globals;c:classes;f:functions;m:meth
 " FuzzyFinder plugin
 " ==================
 
-let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|log|DS_Store|gdbinit)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|vendor|tmp|\.(sass-cache|gdb|bundle)'
-let g:fuf_enumerating_limit = 70
-let g:fuf_maxMenuWidth = 150
-map <leader>b :FufBuffer<CR>
-map <leader>t :FufFile<CR>
-map <leader>q :FufQuickfix<CR>
+"let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|log|DS_Store|gdbinit)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|vendor|tmp|\.(sass-cache|gdb|bundle)'
+"let g:fuf_enumerating_limit = 70
+"let g:fuf_maxMenuWidth = 150
+"map <leader>b :FufBuffer<CR>
+"map <leader>t :FufFile<CR>
+"map <leader>q :FufQuickfix<CR>
 
 " ---- Searching ----
 nmap <leader>f :Ack<space>
