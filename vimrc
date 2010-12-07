@@ -80,7 +80,7 @@ imap ;; <Esc>
 
 " edit vimrc
 nmap <leader>v :sp $MYVIMRC<CR><C-W>_
-nmap <leader>V :source $MYVIMRC<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
+nmap <leader>V :source $MYVIMRC<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
