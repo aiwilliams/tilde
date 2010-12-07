@@ -84,6 +84,12 @@ nnoremap <C-K> <C-W>k
 nnoremap <C-H> <C-W>h
 nnoremap <C-L> <C-W>l
 
+" resize windows
+nmap <C-Left> <C-W><<C-W><
+nmap <C-Right> <C-W>><C-W>>
+nmap <C-Up> <C-W>+<C-W>+
+nmap <C-Down> <C-W>-<C-W>-
+
 " edit vimrc
 nmap <leader>v :sp $MYVIMRC<CR><C-W>_
 nmap <leader>V :source $MYVIMRC<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
