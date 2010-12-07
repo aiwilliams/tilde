@@ -12,8 +12,18 @@ set tabstop=2
 set smarttab
 set wildmode=list:longest                                  " Helpful tab completion
 set backspace=start,indent,eol                             " Allow delete across lines
-set hlsearch
-set number
+
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
+
+" ====================
+" User Interface
+" ====================
+set hlsearch                                               " I like highlighted searches
+set number                                                 " Show line numbers on the left
+
+set laststatus=2                                           " always show status line
 
 set statusline=
 set statusline+=%-3.3n\                                    " buffer number
@@ -24,9 +34,6 @@ set statusline+=%=                                         " right align remaind
 set statusline+=0x%-8B                                     " character value
 set statusline+=%-14(%l,%c%V%)                             " line, character
 set statusline+=%<%P                                       " file position
-
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 syntax enable                                              " Of course we want syntax highlighting!
 
@@ -71,10 +78,18 @@ endif
 let mapleader = ","                                        " A way to make command mapping shorter; see <leader> throughout this
 imap ;; <Esc>
 
+" edit vimrc
+nmap <leader>v :sp $MYVIMRC<CR><C-W>_
+nmap <leader>V :source $MYVIMRC<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
 
-" ==================
+" command-t plugin
+silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
+nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
+set wildignore+=vendor/plugins/**,vendor/linked_gems/**,vendor/gems/**,vendor/rails/**,coverage/**
+let g:CommandTMaxHeight=20
+
 " NERDtree plugin
-" ==================
+let NERDTreeWinSize=31
 map <leader>nt :NERDTree<space>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 map <leader>R :NERDTreeFind<CR>
@@ -94,18 +109,8 @@ map <leader>S :TlistToggle<CR><C-W>h
 let tlist_javascript_settings='javascript;v:globals;c:classes;f:functions;m:methods;p:properties;r:protoype'
 
 
-" ==================
-" FuzzyFinder plugin
-" ==================
-
-"let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|log|DS_Store|gdbinit)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|vendor|tmp|\.(sass-cache|gdb|bundle)'
-"let g:fuf_enumerating_limit = 70
-"let g:fuf_maxMenuWidth = 150
-"map <leader>b :FufBuffer<CR>
-"map <leader>t :FufFile<CR>
-"map <leader>q :FufQuickfix<CR>
-
 " ---- Searching ----
+set incsearch                                           " Incremental searching with /
 nmap <leader>f :Ack<space>
 nmap <leader>w :Ack<space><cword><CR>
 vmap <leader>w "ry:Ack<space>"<C-r>r"<CR>
