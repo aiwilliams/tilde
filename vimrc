@@ -103,6 +103,7 @@ silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
 set wildignore+=vendor/plugins/**,vendor/linked_gems/**,vendor/gems/**,vendor/rails/**,coverage/**
 let g:CommandTMaxHeight=20
+let g:CommandTMatchWindowAtTop=1
 
 " NERDtree plugin
 let NERDTreeWinSize=31
