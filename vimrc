@@ -131,8 +131,8 @@ let tlist_javascript_settings='javascript;v:globals;c:classes;f:functions;m:meth
 set incsearch                                           " Incremental searching with /
 nnoremap <leader>A :Ack<cword><CR>
 nnoremap <leader>a :Ack<Space>
-vmap <leader>aw "ry:Ack<space>"<C-r>r"<CR>
-nmap <leader>rw :Ack<space>--type=ruby<space><cword><CR>
+nnoremap <leader>rw :Ack<space>--type=ruby<space><cword><CR>
+vmap <leader>A "ry:Ack<space>"<C-r>r"<CR>
 
 " Substitution
 nmap <leader>r :%s/<C-r><C-w>/
