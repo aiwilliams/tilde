@@ -78,9 +78,15 @@ endif
 let mapleader = ","                                        " A way to make command mapping shorter; see <leader> throughout this
 imap ;; <Esc>
 
+" move between windows
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-H> <C-W>h
+nnoremap <C-L> <C-W>l
+
 " edit vimrc
 nmap <leader>v :sp $MYVIMRC<CR><C-W>_
-nmap <leader>V :source $MYVIMRC<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+nmap <leader>V :source $MYVIMRC<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
 
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
