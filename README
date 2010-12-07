@@ -1,3 +1,4 @@
 ln -s /Users/aiwilliams/github/aiwilliams/vimrc /Users/aiwilliams/.vim
 ln -s /Users/aiwilliams/.vim/vimrc /Users/aiwilliams/.vimrc
+ln -s /Users/aiwilliams/.vim/gvimrc /Users/aiwilliams/.gvimrc
 git submodule update --init
