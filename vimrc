@@ -78,6 +78,10 @@ endif
 let mapleader = ","                                        " A way to make command mapping shorter; see <leader> throughout this
 imap ;; <Esc>
 
+" insert line above/below
+nnoremap <D-CR> o<ESC>
+nnoremap <D-S-CR> O<ESC>
+
 " move between windows
 nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
