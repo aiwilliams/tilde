@@ -91,6 +91,7 @@ let g:CommandTMaxHeight=20
 " NERDtree plugin
 let NERDTreeWinSize=31
 map <leader>nt :NERDTree<space>
+map <leader>nb :NERDTreeFromBookmark<space>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 map <leader>R :NERDTreeFind<CR>
 
