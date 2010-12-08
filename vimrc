@@ -112,6 +112,20 @@ map <leader>nb :NERDTreeFromBookmark<space>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 map <leader>R :NERDTreeFind<CR>
 
+" Rails bundle
+nnoremap <leader><leader>c :Rcontroller<space>
+nnoremap <leader><leader>m :Rmodel<space>
+nnoremap <leader><leader>a :Rmailer<space>
+nnoremap <leader><leader>v :Rview<space>
+nnoremap <leader><leader>h :Rhelper<space>
+nnoremap <leader><leader>i :Rinitializer<space>
+nnoremap <leader><leader>e :Renvironment<space>
+nnoremap <leader><leader>l :Rlib<space>
+nnoremap <leader><leader>f :Rfeature<space>
+nnoremap <leader><leader>u :Runittest<space>
+nnoremap <leader><leader>j :Rjavascript<space>
+nnoremap <leader><leader>t :Rtask<space>
+nnoremap <leader><leader>r :Rspec<space>
 
 " ==================
 " Tags
