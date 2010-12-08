@@ -81,6 +81,7 @@ imap ;; <Esc>
 " insert line above/below
 nnoremap <D-CR> o<ESC>
 nnoremap <D-S-CR> O<ESC>
+nnoremap <leader><space> i<space><ESC>
 
 " move between windows
 nnoremap <C-J> <C-W>j
