@@ -59,8 +59,6 @@ autocmd BufRead,BufNewFile Gemfile set filetype=ruby       " recognize Gemfile
 set hidden                                                 " Leave buffers even when they're changed
 au FocusLost * :wall                                       " Write all named, changed buffers when Vim loses focus
 
-autocmd BufWritePre * :%s/\s\+$//e                         " strip trailing whitespace
-
 autocmd BufReadPost *                                      " Restore cursor position
   \ if line("'\"") > 1 && line("'\"") <= line("$") |
   \   exe "normal! g`\"" |
@@ -99,21 +97,21 @@ nmap <C-Down> <C-W>-<C-W>-
 nmap <leader>v :sp $MYVIMRC<CR><C-W>_
 nmap <leader>V :source $MYVIMRC<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
 
-" command-t plugin
+" command-t
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
 set wildignore+=vendor/plugins/**,vendor/linked_gems/**,vendor/gems/**,vendor/rails/**,coverage/**
 let g:CommandTMaxHeight=20
-let g:CommandTMatchWindowAtTop=1
+let g:CommandTMatchWindowAtTop=0
 
-" NERDtree plugin
+" NERDtree
 let NERDTreeWinSize=31
 map <leader>nt :NERDTree<space>
 map <leader>nb :NERDTreeFromBookmark<space>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 map <leader>R :NERDTreeFind<CR>
 
-" Rails bundle
+" Rails
 nnoremap <leader><leader>c :Rcontroller<space>
 nnoremap <leader><leader>m :Rmodel<space>
 nnoremap <leader><leader>a :Rmailer<space>
@@ -127,6 +125,8 @@ nnoremap <leader><leader>u :Runittest<space>
 nnoremap <leader><leader>j :Rjavascript<space>
 nnoremap <leader><leader>t :Rtask<space>
 nnoremap <leader><leader>r :Rspec<space>
+
+nnoremap <leader>h :FixWhitespace<CR>
 
 " ==================
 " Tags
