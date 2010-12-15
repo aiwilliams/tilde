@@ -11,6 +11,7 @@ set shiftwidth=2
 set tabstop=2
 set smarttab
 set wildmode=list:longest                                  " Helpful tab completion
+set wcm=<Tab>                                              " :h wildcharm
 set backspace=start,indent,eol                             " Allow delete across lines
 
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
@@ -79,6 +80,7 @@ imap ;; <Esc>
 " insert line above/below
 nnoremap <D-CR> o<ESC>
 nnoremap <D-S-CR> O<ESC>
+inoremap <D-S-CR> <ESC>O
 nnoremap <leader><space> i<space><ESC>
 
 " move between windows
@@ -92,6 +94,8 @@ nmap <C-Left> <C-W><<C-W><
 nmap <C-Right> <C-W>><C-W>>
 nmap <C-Up> <C-W>+<C-W>+
 nmap <C-Down> <C-W>-<C-W>-
+
+nnoremap <leader>b :b<space><Tab>
 
 " edit vimrc
 nmap <leader>v :sp $MYVIMRC<CR><C-W>_
