@@ -135,6 +135,8 @@ nnoremap <leader>h :FixWhitespace<CR>
 " ==================
 " Tags
 "   See http://sites.google.com/site/daveparillo/software-development/vim/ctags
+"   
+"   :!ctags -R  // recursively generate tags for every known file type
 " ==================
 " TODO Learn to use tags beyond the TlistToggle...
 "set tags=./tags
@@ -142,7 +144,7 @@ nnoremap <leader>h :FixWhitespace<CR>
 
 " Taglist plugin
 let Tlist_Show_One_File = 1
-map <leader>S :TlistToggle<CR><C-W>h
+map <leader>S :TlistToggle<CR>
 let tlist_javascript_settings='javascript;v:globals;c:classes;f:functions;m:methods;p:properties;r:protoype'
 
 
