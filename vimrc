@@ -13,6 +13,7 @@ set smarttab
 set wildmode=list:longest                                  " Helpful tab completion
 set wcm=<Tab>                                              " :h wildcharm
 set backspace=start,indent,eol                             " Allow delete across lines
+set nowrap                                                 " Don't wrap lines longer than window width
 
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
