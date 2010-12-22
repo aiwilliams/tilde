@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ln -Ffsv $PWD/lib $HOME/lib
-ln -Ffsv $PWD/.vim $HOME/.vim
-ln -Ffsv $PWD/.vimrc $HOME/.vimrc
-ln -Ffsv $PWD/.gvimrc $HOME/.gvimrc
+ln -sv $PWD/lib/ $HOME/lib
+ln -sv $PWD/.vim/ $HOME/.vim
+ln -sv $PWD/.vimrc $HOME/.vimrc
+ln -sv $PWD/.gvimrc $HOME/.gvimrc
 git submodule update --init
