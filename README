@@ -1,4 +1,3 @@
-ln -s /Users/aiwilliams/github/aiwilliams/vimrc /Users/aiwilliams/.vim
-ln -s /Users/aiwilliams/.vim/vimrc /Users/aiwilliams/.vimrc
-ln -s /Users/aiwilliams/.vim/gvimrc /Users/aiwilliams/.gvimrc
-git submodule update --init
+This is not my complete home directory, of course.
+I'm using symbolic links to wire stuff into the right place.
+Once you have this project, run setup.sh.

@@ -1,42 +1,42 @@
-[submodule "bundle/rails"]
-	path = bundle/rails
-	url = git://github.com/tpope/vim-rails.git
-[submodule "bundle/surround"]
-	path = bundle/surround
-	url = git://github.com/tpope/vim-surround.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
-[submodule "bundle/endwise"]
-	path = bundle/endwise
-	url = git://github.com/tpope/vim-endwise.git
-[submodule "bundle/ack"]
-	path = bundle/ack
+[submodule ".vim/bundle/ack"]
+	path = .vim/bundle/ack
 	url = git://github.com/mileszs/ack.vim.git
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/fugitive"]
-	path = bundle/fugitive
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "bundle/vim-cucumber"]
-	path = bundle/vim-cucumber
+[submodule ".vim/bundle/vim-cucumber"]
+	path = .vim/bundle/vim-cucumber
 	url = git://github.com/tpope/vim-cucumber.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
+[submodule ".vim/bundle/command-t"]
+	path = .vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
-[submodule "bundle/vim-git"]
-	path = bundle/vim-git
+[submodule ".vim/bundle/vim-git"]
+	path = .vim/bundle/vim-git
 	url = https://github.com/tpope/vim-git.git
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
+[submodule ".vim/bundle/vim-markdown"]
+	path = .vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "bundle/vim-markdown-preview"]
-	path = bundle/vim-markdown-preview
+[submodule ".vim/bundle/vim-markdown-preview"]
+	path = .vim/bundle/vim-markdown-preview
 	url = https://github.com/robgleeson/vim-markdown-preview.git
-[submodule "bundle/vim-ruby"]
-	path = bundle/vim-ruby
+[submodule ".vim/bundle/vim-ruby"]
+	path = .vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "bundle/vim-trailing-whitespace"]
-	path = bundle/vim-trailing-whitespace
+[submodule ".vim/bundle/vim-trailing-whitespace"]
+	path = .vim/bundle/vim-trailing-whitespace
 	url = https://github.com/bronson/vim-trailing-whitespace.git
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/vim-rails"]
+	path = .vim/bundle/vim-rails
+	url = git://github.com/tpope/vim-rails.git
+[submodule ".vim/bundle/vim-endwise"]
+	path = .vim/bundle/vim-endwise
+	url = git://github.com/tpope/vim-endwise.git
