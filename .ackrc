@@ -1,0 +1,6 @@
+--type-add=ruby=.haml,.rake,.rsel,.ru
+--type-add=ruby=.email
+--type-set=cuke=.feature
+--type-set=sass=.sass,.scss
+--ignore-dir=tmp
+--ignore-dir=vendor

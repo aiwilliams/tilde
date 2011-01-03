@@ -1,0 +1,29 @@
+[user]
+	name = Adam Williams
+	email = adam@thewilliams.ws
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+[merge]
+	tool = opendiff
+[core]
+	legacyheaders = false
+	excludesfile = /Users/aiwilliams/.gitignore
+[repack]
+	usedeltabaseoffset = true
+
+
+[apply]
+  whitespace = nowarn
+[svn]
+	authorsfile = /Users/aiwilliams/.gitusers
+[github]
+	user = aiwilliams
+	token = 7a6f9be6ec783d60a3ffb220d46cb5c4
+[push]
+	default = tracking
