@@ -98,6 +98,9 @@ nmap <C-Down> <C-W>-<C-W>-
 
 nnoremap <leader>b :b<space><Tab>
 
+" gundo - an undo tree browser
+nnoremap <F5> :GundoToggle<CR>
+
 " edit vimrc
 nmap <leader>v :sp $MYVIMRC<CR><C-W>_
 nmap <leader>V :source $MYVIMRC<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
