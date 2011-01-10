@@ -59,7 +59,6 @@ autocmd BufRead,BufNewFile Gemfile set filetype=ruby       " recognize Gemfile
 " Buffers
 " ==================
 set hidden                                                 " Leave buffers even when they're changed
-au FocusLost * :wall                                       " Write all named, changed buffers when Vim loses focus
 
 autocmd BufReadPost *                                      " Restore cursor position
   \ if line("'\"") > 1 && line("'\"") <= line("$") |
