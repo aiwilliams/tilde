@@ -37,8 +37,6 @@ set statusline+=0x%-8B                                     " character value
 set statusline+=%-14(%l,%c%V%)                             " line, character
 set statusline+=%<%P                                       " file position
 
-syntax enable                                              " Of course we want syntax highlighting!
-
 if has("gui_running")
   set guioptions+=TlRLrb
   set guioptions-=TlRLrb
@@ -46,6 +44,8 @@ if has("gui_running")
 endif
 
 colorscheme desert256
+syntax enable                                              " Of course we want syntax highlighting!
+highlight LineNr guifg=#383838                             " Lighten up the line numbers
 
 " =================
 " :help filetype
