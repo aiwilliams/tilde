@@ -22,8 +22,5 @@
   whitespace = nowarn
 [svn]
 	authorsfile = /Users/aiwilliams/.gitusers
-[github]
-	user = aiwilliams
-	token = 7a6f9be6ec783d60a3ffb220d46cb5c4
 [push]
 	default = tracking
