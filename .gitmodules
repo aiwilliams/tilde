@@ -46,3 +46,9 @@
 [submodule ".vim/bundle/vim-javascript"]
 	path = .vim/bundle/vim-javascript
 	url = git://github.com/pangloss/vim-javascript.git
+[submodule ".vim/bundle/cocoa"]
+	path = .vim/bundle/cocoa
+	url = git://github.com/msanders/cocoa.vim.git
+[submodule ".vim/bundle/zencoding-vim"]
+	path = .vim/bundle/zencoding-vim
+	url = git://github.com/mattn/zencoding-vim.git
