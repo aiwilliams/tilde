@@ -53,6 +53,7 @@ highlight LineNr guifg=#383838                             " Lighten up the line
 filetype plugin indent on
 autocmd BufRead,BufNewFile Capfile set filetype=ruby       " recognize Capfile
 autocmd BufRead,BufNewFile Gemfile set filetype=ruby       " recognize Gemfile
+autocmd BufRead,BufNewFile *.jst set filetype=html
 
 
 " ==================
