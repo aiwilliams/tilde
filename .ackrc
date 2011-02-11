@@ -4,3 +4,4 @@
 --type-set=sass=.sass,.scss
 --ignore-dir=tmp
 --ignore-dir=vendor
+--ignore-dir=public/assets
