@@ -1,5 +1,6 @@
 --type-add=ruby=.haml,.rake,.rsel,.ru
 --type-add=ruby=.email
+--type-add=html=.jst
 --type-set=cuke=.feature
 --type-set=sass=.sass,.scss
 --ignore-dir=tmp
