@@ -43,8 +43,9 @@ if has("gui_running")
   set guifont=Monaco:h14
 endif
 
-colorscheme desert256
 syntax enable                                              " Of course we want syntax highlighting!
+set background=dark
+colorscheme solarized
 highlight LineNr guifg=#383838                             " Lighten up the line numbers
 
 " =================
