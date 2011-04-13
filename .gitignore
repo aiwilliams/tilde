@@ -12,6 +12,8 @@ nbproject
 .netrwhist
 tags
 
+.bundle
+
 *~.nib
 build/
 *.pbxuser
