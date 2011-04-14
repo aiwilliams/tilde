@@ -46,7 +46,6 @@ endif
 syntax enable                                              " Of course we want syntax highlighting!
 set background=dark
 colorscheme solarized
-highlight LineNr guifg=#383838                             " Lighten up the line numbers
 
 " =================
 " :help filetype
