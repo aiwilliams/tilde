@@ -6,6 +6,7 @@
 	diff = auto
 	branch = auto
 [alias]
+  aa = !git add -u && git add . && git status
 	st = status
 	ci = commit
 	co = checkout
