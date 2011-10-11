@@ -1,6 +1,7 @@
---type-add=ruby=.haml,.rake,.rsel,.ru
---type-add=ruby=.email
---type-add=html=.jst
+--type-add=ruby=.haml,.rake,.rsel,.ru,.email
+--type-add=js=.coffee,.json
+--type-add=html=.jst,.handlebars
+--type-set=coffee=.coffee
 --type-set=cuke=.feature
 --type-set=sass=.sass,.scss
 --ignore-dir=tmp
