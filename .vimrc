@@ -54,6 +54,7 @@ filetype plugin indent on
 autocmd BufRead,BufNewFile Capfile set filetype=ruby       " recognize Capfile
 autocmd BufRead,BufNewFile Gemfile set filetype=ruby       " recognize Gemfile
 autocmd BufRead,BufNewFile Guardfile set filetype=ruby     " recognize Guardfile
+autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.jst set filetype=html
 autocmd BufRead,BufNewFile *.handlebars set filetype=html
 autocmd BufRead,BufNewFile *.json set filetype=javascript
