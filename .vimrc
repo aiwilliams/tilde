@@ -45,7 +45,7 @@ endif
 
 syntax enable                                              " Of course we want syntax highlighting!
 set background=dark
-colorscheme solarized
+colorscheme lucius-dark
 
 " =================
 " :help filetype
