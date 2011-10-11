@@ -19,6 +19,7 @@ ln -sfv $PWD/.ackrc $HOME/.ackrc
 ln -sfv $PWD/.gitconfig $HOME/.gitconfig
 ln -sfv $PWD/.gitignore $HOME/.gitignore
 ln -sfv $PWD/.gitusers $HOME/.gitusers
+ln -sfv $PWD/.gittemplate $HOME/.gittemplate
 
 
 #######################

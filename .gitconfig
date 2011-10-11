@@ -1,6 +1,8 @@
 [user]
 	name = Adam Williams
 	email = adam@thewilliams.ws
+[init]
+	templatedir = ~/.gittemplate
 [color]
 	status = auto
 	diff = auto
@@ -14,7 +16,7 @@
 	tool = opendiff
 [core]
 	legacyheaders = false
-	excludesfile = /Users/aiwilliams/.gitignore
+	excludesfile = ~/.gitignore
 [repack]
 	usedeltabaseoffset = true
 [push]
@@ -23,6 +25,6 @@
 [apply]
   whitespace = nowarn
 [svn]
-	authorsfile = /Users/aiwilliams/.gitusers
+	authorsfile = ~/.gitusers
 [push]
 	default = tracking
