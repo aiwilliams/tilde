@@ -17,7 +17,8 @@
 	excludesfile = /Users/aiwilliams/.gitignore
 [repack]
 	usedeltabaseoffset = true
-
+[push]
+  default = tracking
 
 [apply]
   whitespace = nowarn
