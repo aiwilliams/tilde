@@ -12,6 +12,7 @@
 	st = status
 	ci = commit
 	co = checkout
+  ctags = !.git/hooks/ctags
 [merge]
 	tool = opendiff
 [core]
