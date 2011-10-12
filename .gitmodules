@@ -22,9 +22,6 @@
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
-[submodule ".vim/bundle/vim-markdown-preview"]
-	path = .vim/bundle/vim-markdown-preview
-	url = https://github.com/robgleeson/vim-markdown-preview.git
 [submodule ".vim/bundle/vim-ruby"]
 	path = .vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
