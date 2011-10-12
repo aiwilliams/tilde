@@ -6,7 +6,7 @@ ln -sv $PWD/lib/ $HOME/lib
 #######################
 #  BASH
 #######################
-ln -sfv $PWD/.base_profile $HOME/.bash_profile
+ln -sfv $PWD/.bash_profile $HOME/.bash_profile
 
 
 #######################
