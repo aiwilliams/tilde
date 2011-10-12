@@ -1,13 +1,15 @@
-export PS1="\u@\h:(\W$(__git_ps1 " (%s)"))\n$ "
-#export PS1='\[\e[36m\]$(__bundler_ps1 "[%s] ")\[\e[0m\]\w\[\e[35m\]$(__git_ps1 " %s")\[\e[0m\] '
+######### Homebrew ##########
+# Please check your /etc/paths to be sure that /usr/local/bin is first in order
+
+source ~/lib/git-completion.bash
+complete -C $HOME/lib/rake-complete.rb -o default rake
+
+export PS1='\[\e[36m\]\[\e[0m\]\w\[\e[35m\]$(__git_ps1 " %s")\[\e[0m\] '
 
 export EDITOR="mvim"
 export LESS="-R"
 export GEMEDITOR="mvim"
 export GUARD_NOTIFY=false
-
-source ~/lib/git-completion.bash
-complete -C $HOME/lib/rake-complete.rb -o default rake
 
 ######### MacVim ##########
 defaults write org.vim.MacVim MMVerticalSplit 1

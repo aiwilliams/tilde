@@ -25,7 +25,7 @@ ln -sfv $PWD/.ackrc $HOME/.ackrc
 ln -sfv $PWD/.gitconfig $HOME/.gitconfig
 ln -sfv $PWD/.gitignore $HOME/.gitignore
 ln -sfv $PWD/.gitusers $HOME/.gitusers
-ln -sfv $PWD/.gittemplate $HOME/.gittemplate
+ln -sFfv $PWD/.gittemplate $HOME
 
 # Fetch latest
 curl https://github.com/git/git/raw/master/contrib/completion/git-completion.bash -L -o $PWD/lib/git-completion.bash
