@@ -2,6 +2,11 @@
 
 ln -sv $PWD/lib/ $HOME/lib
 
+#######################
+#  Ruby
+#######################
+ln -sfv $PWD/.gemrc $HOME/.gemrc
+
 
 #######################
 #  BASH
