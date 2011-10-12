@@ -11,6 +11,7 @@ db/*.sqlite3
 nbproject
 .netrwhist
 tags
+lib/git-completion.bash
 
 .bundle
 
