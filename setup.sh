@@ -6,6 +6,7 @@ ln -sv $PWD/lib/ $HOME/lib
 #  Ruby
 #######################
 ln -sfv $PWD/.gemrc $HOME/.gemrc
+ln -sfv $PWD/.rdebugrc $HOME/.rdebugrc
 
 
 #######################
