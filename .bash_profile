@@ -15,6 +15,13 @@ export GUARD_NOTIFY=false
 defaults write org.vim.MacVim MMVerticalSplit 1
 defaults write org.vim.MacVim MMZoomBoth 1
 
+# https://github.com/robgleeson/hammer.vim/issues/8
+# https://github.com/robgleeson/hammer.vim/issues/12
+mvim()
+{
+  (unset GEM_PATH GEM_HOME; command mvim "$@")
+}
+
 ######### GIT ##########
 alias gl='git log -n1000 --no-merges --pretty=format:"* %s (%cn) %b"'
 
