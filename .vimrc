@@ -138,7 +138,9 @@ nnoremap <leader><leader>j :Rjavascript<space>
 nnoremap <leader><leader>t :Rtask<space>
 nnoremap <leader><leader>r :Rspec<space>
 
+" Formatting
 nnoremap <leader>h :FixWhitespace<CR>
+vmap <leader>x :!sed -e 's/ *//' -e 's/\\"/"/g' \| xmllint --format -<CR>
 
 " ==================
 " Tags
