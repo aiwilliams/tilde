@@ -116,6 +116,12 @@ set wildignore+=public/assets/**,build/**,vendor/plugins/**,vendor/linked_gems/*
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowAtTop=0
 
+" Hammer
+let g:HammerQuiet=1     " Sadly, we must compile it's extensions against system
+                        " Ruby, which requires mvim hack in bash_profile.
+                        " Other commands, like 'bundle open', fail to support
+                        " our Hammer when they're invoked outside system Ruby.
+
 " NERDtree
 let NERDTreeWinSize=31
 map <leader>nt :NERDTree<space>
