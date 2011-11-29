@@ -40,7 +40,7 @@ set statusline+=%<%P                                       " file position
 if has("gui_running")
   set guioptions+=TlRLrb
   set guioptions-=TlRLrb
-  set guifont=Monaco:h14
+  set guifont=Monaco:h10
 endif
 
 syntax enable                                              " Of course we want syntax highlighting!
