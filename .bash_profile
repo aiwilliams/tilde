@@ -15,6 +15,7 @@ export GUARD_NOTIFY=false
 defaults write org.vim.MacVim MMVerticalSplit 1
 defaults write org.vim.MacVim MMZoomBoth 1
 
+# TODO I don't think I need these any more not using RVM??
 # https://github.com/robgleeson/hammer.vim/issues/8
 # https://github.com/robgleeson/hammer.vim/issues/12
 mvim()
@@ -27,13 +28,17 @@ alias gl='git log -n1000 --no-merges --pretty=format:"* %s (%cn) %b"'
 
 ######### Bundler ##########
 alias b="bundle"
-alias bi="b install --path vendor"
+alias bi="b install"
 alias bu="b update"
 alias be="b exec"
-alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
 
+# TODO Remove this once rbenv is working well
 ######### RVM ##########
 [[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
+
+######### rbenv ##########
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 ######### SSH ##########
 # http://www.shocm.com/2011/01/ssh-autocomplete-on-osx/
