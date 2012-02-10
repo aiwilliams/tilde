@@ -4,6 +4,7 @@
 --type-set=coffee=.coffee
 --type-set=cuke=.feature
 --type-set=sass=.sass,.scss
+--ignore-dir=build
 --ignore-dir=tmp
 --ignore-dir=vendor
 --ignore-dir=public/assets
