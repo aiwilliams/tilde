@@ -44,5 +44,11 @@ ln -sv $PWD/.vim/ $HOME/.vim
 ln -sfv $PWD/.vimrc $HOME/.vimrc
 ln -sfv $PWD/.gvimrc $HOME/.gvimrc
 
-# Pull in our .vim/bundles
+
+#######################
+#  rbenv
+#######################
+ln -sv $PWD/.rbenv/plugins/ $HOME/.rbenv/plugins
+
+# Pull in our .vim/bundles, .rbenv/plugins
 git submodule update --init
