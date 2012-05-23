@@ -18,6 +18,7 @@
 [core]
 	legacyheaders = false
 	excludesfile = /Users/aiwilliams/.gitignore
+	quotepath = false
 [repack]
 	usedeltabaseoffset = true
 [apply]
