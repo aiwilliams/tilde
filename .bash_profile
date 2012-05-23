@@ -39,8 +39,8 @@ alias be="b exec"
 [[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
 ######### rbenv ##########
-export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export PATH="./bin:$PATH"
 
 ######### SSH ##########
 # http://www.shocm.com/2011/01/ssh-autocomplete-on-osx/
