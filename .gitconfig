@@ -26,5 +26,3 @@
 	authorsfile = /Users/aiwilliams/.svnauthors
 [push]
 	default = tracking
-[branch]
-  autosetuprebase = always
