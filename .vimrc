@@ -185,6 +185,7 @@ nnoremap <C-y> 3<C-y>
 
 " Add ability to open urls in a browser.
 " http://vim.wikia.com/wiki/VimTip306 - OS X version that uses John Gruber's URL regexp and Ruby
+if has('ruby') && !exists("*OpenURI")
 ruby << EOF
   def open_uri
     re = %r{(?i)\b((?:[a-z][\w-]+:(?:/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))}
@@ -200,12 +201,11 @@ ruby << EOF
   end
 EOF
 
-if !exists("*OpenURI")
   function! OpenURI()
     :ruby open_uri
   endfunction
+  map <Leader>w :call OpenURI()<CR>
 endif
-map <Leader>w :call OpenURI()<CR>
 
 
 " Add ability to format Cucumber/Gherkin tables
