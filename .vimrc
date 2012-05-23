@@ -47,6 +47,11 @@ syntax enable                                              " Of course we want s
 set background=dark
 colorscheme lucius-dark
 
+set foldmethod=indent                                      " fold based on indent
+set foldnestmax=10                                         " deepest fold is 10 levels
+set nofoldenable                                           " dont fold by default
+set foldlevel=1                                            " this is just what i use
+
 " =================
 " :help filetype
 " =================
