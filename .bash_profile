@@ -24,6 +24,7 @@ mvim()
 }
 
 ######### GIT ##########
+export GIT_EDITOR='mvim -gf '
 alias gl='git log -n1000 --no-merges --pretty=format:"* %s (%cn) %b"'
 
 ######### Bundler ##########
