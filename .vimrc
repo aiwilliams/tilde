@@ -175,6 +175,17 @@ nnoremap <leader>a :Ack<Space>
 nnoremap <leader>rw :Ack<space>--type=ruby<space><cword><CR>
 vmap <leader>A "ry:Ack<space>"<C-r>r"<CR>
 
+" Search for current selection
+xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR>
+xnoremap # :<C-u>call <SID>VSetSearch()<CR>?<C-R>=@/<CR><CR>
+
+function! s:VSetSearch()
+  let temp = @s
+  norm! gv"sy
+  let @/ = '\V' . substitute(escape(@s, '/\'), '\n', '\\n', 'g')
+  let @s = temp
+endfunction
+
 " Substitution
 nmap <leader>r :%s/<C-r><C-w>/
 vmap <leader>r "ry:%s/<C-r>r/
