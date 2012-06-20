@@ -3,6 +3,16 @@
 ln -sv $PWD/lib/ $HOME/lib
 
 #######################
+#  System
+#######################
+
+# I want Apache to run along with Pow.cx. We need to install a VirtualHost to
+# handle it.
+sudo ln -sfv $PWD/etc/apache2/other/zzz_pow.conf /etc/apache2/other/zzz_pow.conf
+sudo apachectl restart
+
+
+#######################
 #  Ruby
 #######################
 ln -sfv $PWD/.gemrc $HOME/.gemrc
