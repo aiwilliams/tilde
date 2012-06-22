@@ -62,3 +62,9 @@ ln -sv $PWD/.rbenv/plugins/ $HOME/.rbenv/plugins
 
 # Pull in our .vim/bundles, .rbenv/plugins
 git submodule update --init
+
+
+#######################
+#  Rails
+#######################
+ln -sfv $PWD/.railsrc $HOME/.railsrc
