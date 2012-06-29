@@ -40,7 +40,7 @@ alias be="b exec"
 
 ######### rbenv ##########
 eval "$(rbenv init -)"
-export PATH="./bin:$PATH"
+export PATH="./bin:$HOME/bin:$PATH"
 
 ######### SSH ##########
 # http://www.shocm.com/2011/01/ssh-autocomplete-on-osx/

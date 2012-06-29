@@ -13,6 +13,7 @@ nbproject
 tags
 lib/git-completion.bash
 
+bin
 .bundle
 
 *~.nib
