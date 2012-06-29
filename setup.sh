@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ln -sv $PWD/bin/ $HOME/bin
 ln -sv $PWD/lib/ $HOME/lib
 
 #######################
