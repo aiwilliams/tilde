@@ -19,14 +19,6 @@ export ANDROID_HOME="/Users/aiwilliams/Workspaces/android/android-sdk-macosx"
 defaults write org.vim.MacVim MMVerticalSplit 1
 defaults write org.vim.MacVim MMZoomBoth 1
 
-# TODO I don't think I need these any more not using RVM??
-# https://github.com/robgleeson/hammer.vim/issues/8
-# https://github.com/robgleeson/hammer.vim/issues/12
-mvim()
-{
-  (unset GEM_PATH GEM_HOME; command mvim "$@")
-}
-
 ######### GIT ##########
 export GIT_EDITOR='mvim -gf '
 alias gl='git log -n1000 --no-merges --pretty=format:"* %s (%cn) %b"'
@@ -37,10 +29,6 @@ alias b="bundle"
 alias bi="b install"
 alias bu="b update"
 alias be="b exec"
-
-# TODO Remove this once rbenv is working well
-######### RVM ##########
-[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
 ######### rbenv ##########
 eval "$(rbenv init -)"
