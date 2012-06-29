@@ -1,0 +1,2 @@
+#!/bin/bash 
+rlwrap --quote-characters="'" --command clojure clj
