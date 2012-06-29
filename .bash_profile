@@ -11,6 +11,9 @@ export LESS="-R"
 export GEMEDITOR="mvim"
 export GUARD_NOTIFY=false
 
+#### Android Development ####
+export ANDROID_HOME="/Users/aiwilliams/Workspaces/android/android-sdk-macosx"
+
 ######### MacVim ##########
 defaults write org.vim.MacVim MMVerticalSplit 1
 defaults write org.vim.MacVim MMZoomBoth 1
