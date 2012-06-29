@@ -45,6 +45,7 @@ ln -sFfv $PWD/.gittemplate $HOME
 
 # Fetch latest
 curl https://github.com/git/git/raw/master/contrib/completion/git-completion.bash -L -o $PWD/lib/git-completion.bash
+curl https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh -L -o $PWD/lib/git-prompt.sh
 
 
 #######################
