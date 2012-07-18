@@ -73,3 +73,6 @@
 [submodule ".rbenv/plugins/bundler"]
 	path = .rbenv/plugins/bundler
 	url = git@github.com:carsomyr/rbenv-bundler
+[submodule ".vim/bundle/vim-clojure"]
+	path = .vim/bundle/vim-clojure
+	url = git://github.com/vim-scripts/VimClojure.git

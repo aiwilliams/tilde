@@ -114,6 +114,11 @@ nnoremap <F5> :GundoToggle<CR>
 nmap <leader>v :sp $MYVIMRC<CR><C-W>_
 nmap <leader>V :source $MYVIMRC<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
 
+" Clojure
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
+let g:vimclojure#WantNailgun = 1
+
 " command-t
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
@@ -156,7 +161,7 @@ vmap <leader>x :!sed -e 's/ *//' -e 's/\\"/"/g' \| xmllint --format -<CR>
 " ==================
 " Tags
 "   See http://sites.google.com/site/daveparillo/software-development/vim/ctags
-"   
+"
 "   :!ctags -R  // recursively generate tags for every known file type
 " ==================
 " TODO Learn to use tags beyond the TlistToggle...
