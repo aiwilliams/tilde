@@ -157,6 +157,7 @@ nnoremap <leader><leader>r :Rspec<space>
 " Formatting
 nnoremap <leader>h :FixWhitespace<CR>
 vmap <leader>x :!sed -e 's/ *//' -e 's/\\"/"/g' \| xmllint --format -<CR>
+vnoremap <leader>64 c<c-r>=system('base64 --decode', @")<cr><esc>
 
 " ==================
 " Tags
