@@ -18,6 +18,7 @@ sudo apachectl restart
 #######################
 ln -sfv $PWD/.gemrc $HOME/.gemrc
 ln -sfv $PWD/.rdebugrc $HOME/.rdebugrc
+ln -sfv $PWD/.pryrc $HOME/.pryrc
 
 
 #######################
