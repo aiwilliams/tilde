@@ -1,3 +1,21 @@
 This is not my complete home directory, of course.  I'm using symbolic links to
 wire stuff into the right place.  Once you have this project, run setup.sh.
 Don't worry, it's idempotent, I think.
+
+Tools
+=====
+
+Maven
+-----
+brew install maven
+
+The command line tool is 'mvn'.
+
+
+IntelliJ IDEA
+-------------
+
+I'll be needing to add environment variables for the IDE, since it is started
+by launchd.
+
+  launchctl setenv ANDROID_HOME $ANDROID_HOME
