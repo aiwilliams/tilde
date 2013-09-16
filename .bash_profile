@@ -47,6 +47,9 @@ export PATH="./bin:$HOME/bin:$PATH"
 #### Riak ####
 ulimit -n 2048
 
+#### Node.js, npm ####
+export PATH="/usr/local/share/npm/bin:$PATH"
+
 ######### SSH ##########
 # http://www.shocm.com/2011/01/ssh-autocomplete-on-osx/
 _complete_ssh_hosts ()
