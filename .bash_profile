@@ -44,6 +44,9 @@ alias be="b exec"
 eval "$(rbenv init -)"
 export PATH="./bin:$HOME/bin:$PATH"
 
+#### Riak ####
+ulimit -n 2048
+
 ######### SSH ##########
 # http://www.shocm.com/2011/01/ssh-autocomplete-on-osx/
 _complete_ssh_hosts ()
