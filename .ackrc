@@ -1,6 +1,6 @@
 --type-add=ruby=.haml,.rake,.rsel,.ru,.email
 --type-add=js=.coffee,.json
---type-add=html=.jst,.handlebars,.slim
+--type-add=html=.md,.markdown,.jst,.handlebars,.slim
 --type-set=coffee=.coffee
 --type-set=cuke=.feature
 --type-set=sass=.sass,.scss
