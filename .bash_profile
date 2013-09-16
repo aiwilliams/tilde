@@ -13,6 +13,10 @@ export LESS="-R"
 export GEMEDITOR="mvim"
 export GUARD_NOTIFY=false
 
+#### Helpers ####
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
+alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+
 #### Android Development ####
 export ANDROID_HOME="/Users/aiwilliams/Workspaces/android/android-sdk-macosx"
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
