@@ -121,6 +121,7 @@ let g:vimclojure#WantNailgun = 1
 
 " command-t
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
+silent! nmap <silent> <Leader>b :CommandTBuffer<CR>
 nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
 set wildignore+=bin,public/assets/**,build/**,vendor/plugins/**,vendor/linked_gems/**,vendor/gems/**,vendor/rails/**,vendor/ruby/**,vendor/cache/**,Libraries/**,coverage/**
 let g:CommandTMaxHeight=20
