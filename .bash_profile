@@ -41,7 +41,7 @@ alias bu="b update"
 alias be="b exec"
 
 ######### rbenv ##########
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="./bin:$HOME/bin:$PATH"
 
 #### Riak ####
