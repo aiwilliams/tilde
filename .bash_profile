@@ -1,6 +1,7 @@
 ######### Homebrew ##########
 # Please check your /etc/paths to be sure that /usr/local/bin is first in order
 
+source $HOME/.bash_privates
 source $HOME/lib/git-completion.bash
 source $HOME/lib/git-prompt.sh
 complete -C $HOME/lib/rake-complete.rb -o default rake
