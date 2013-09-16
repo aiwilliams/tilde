@@ -76,3 +76,6 @@
 [submodule ".vim/bundle/vim-clojure"]
 	path = .vim/bundle/vim-clojure
 	url = git://github.com/vim-scripts/VimClojure.git
+[submodule ".rbenv/plugins/rbenv-vars"]
+	path = .rbenv/plugins/rbenv-vars
+	url = https://github.com/sstephenson/rbenv-vars.git
