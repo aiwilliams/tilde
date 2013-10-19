@@ -44,6 +44,12 @@ alias be="b exec"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="./bin:$HOME/bin:$PATH"
 
+######### plenv ##########
+if which plenv > /dev/null; then eval "$(plenv init -)"; fi
+
+######### pyenv ##########
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
 #### Riak ####
 ulimit -n 2048
 
