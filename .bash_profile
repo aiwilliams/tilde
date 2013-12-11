@@ -42,6 +42,7 @@ alias b="bundle"
 alias bi="b install"
 alias bu="b update"
 alias be="b exec"
+[ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
 
 ######### rbenv ##########
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
