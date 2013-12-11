@@ -17,6 +17,9 @@ export GUARD_NOTIFY=false
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 
+#### DevOps ####
+export VAGRANT_DEFAULT_PROVIDER="vmware_fusion"
+
 #### Android Development ####
 export ANDROID_HOME="/Users/aiwilliams/Workspaces/android/android-sdk-macosx"
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
