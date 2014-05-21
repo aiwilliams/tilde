@@ -66,6 +66,10 @@ ln -sv $PWD/.rbenv/plugins/ $HOME/.rbenv/plugins
 # Pull in our .vim/bundles, .rbenv/plugins
 git submodule update --init
 
+#######################
+#  tmux
+#######################
+ln -sv $PWD/.tmux.conf $HOME/.tmux.conf
 
 #######################
 #  Rails
