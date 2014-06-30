@@ -69,7 +69,7 @@ git submodule update --init
 #######################
 #  tmux
 #######################
-ln -sv $PWD/.tmux.conf $HOME/.tmux.conf
+ln -sfv $PWD/.tmux.conf $HOME/.tmux.conf
 
 #######################
 #  Rails
