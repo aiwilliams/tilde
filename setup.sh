@@ -17,8 +17,6 @@ sudo apachectl restart
 #  Ruby
 #######################
 ln -sfv $PWD/.gemrc $HOME/.gemrc
-ln -sfv $PWD/.rdebugrc $HOME/.rdebugrc
-ln -sfv $PWD/.pryrc $HOME/.pryrc
 
 
 #######################
@@ -70,8 +68,3 @@ git submodule update --init
 #  tmux
 #######################
 ln -sfv $PWD/.tmux.conf $HOME/.tmux.conf
-
-#######################
-#  Rails
-#######################
-ln -sfv $PWD/.railsrc $HOME/.railsrc
