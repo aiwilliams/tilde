@@ -20,17 +20,9 @@ alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.
 #### DevOps ####
 export VAGRANT_DEFAULT_PROVIDER="vmware_fusion"
 
-#### Android Development ####
-export ANDROID_HOME="/Users/aiwilliams/Workspaces/android/android-sdk-macosx"
-export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
-export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
-
 ######### MacVim ##########
 defaults write org.vim.MacVim MMVerticalSplit 1
 defaults write org.vim.MacVim MMZoomBoth 1
-
-######### IntelliJ ##########
-launchctl setenv ANDROID_HOME $ANDROID_HOME
 
 ######### GIT ##########
 export GIT_EDITOR='vim'
