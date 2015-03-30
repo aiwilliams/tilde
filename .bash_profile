@@ -20,6 +20,11 @@ alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.
 #### DevOps ####
 export VAGRANT_DEFAULT_PROVIDER="vmware_fusion"
 
+#### Ubuntu Launchpad ####
+export DEBUSERNAME="aiwilliams"
+export DEBFULLNAME="Adam Williams"
+export DEBEMAIL="adam@thewilliams.ws"
+
 ######### MacVim ##########
 defaults write org.vim.MacVim MMVerticalSplit 1
 defaults write org.vim.MacVim MMZoomBoth 1
