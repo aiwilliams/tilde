@@ -8,9 +8,9 @@ complete -C $HOME/lib/rake-complete.rb -o default rake
 
 export PS1='\[\e[36m\]\[\e[0m\]\w\[\e[35m\]$(__git_ps1 " %s")\[\e[0m\] '
 
-export EDITOR="mvim"
+export EDITOR="vim"
 export LESS="-R"
-export GEMEDITOR="mvim"
+export GEMEDITOR="vim"
 export GUARD_NOTIFY=false
 
 #### Helpers ####
@@ -33,7 +33,7 @@ defaults write org.vim.MacVim MMZoomBoth 1
 launchctl setenv ANDROID_HOME $ANDROID_HOME
 
 ######### GIT ##########
-export GIT_EDITOR='mvim -gf '
+export GIT_EDITOR='vim'
 alias gl='git log -n1000 --no-merges --pretty=format:"* %s (%cn) %b"'
 alias gitx='gitx --all'
 
