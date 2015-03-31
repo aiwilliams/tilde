@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ln -sv $PWD/bin/ $HOME/bin
-ln -sv $PWD/lib/ $HOME/lib
+ln -svfh $PWD/bin/ $HOME/bin
+ln -svfh $PWD/lib/ $HOME/lib
 
 #######################
 #  System
@@ -51,7 +51,7 @@ curl https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh -L -
 #######################
 #  VIM
 #######################
-ln -sv $PWD/.vim/ $HOME/.vim
+ln -svfh $PWD/.vim/ $HOME/.vim
 ln -sfv $PWD/.vimrc $HOME/.vimrc
 ln -sfv $PWD/.gvimrc $HOME/.gvimrc
 
@@ -59,7 +59,7 @@ ln -sfv $PWD/.gvimrc $HOME/.gvimrc
 #######################
 #  rbenv
 #######################
-ln -sv $PWD/.rbenv/plugins/ $HOME/.rbenv/plugins
+ln -svfh $PWD/.rbenv/plugins/ $HOME/.rbenv/plugins
 
 # Pull in our .vim/bundles, .rbenv/plugins
 git submodule update --init
