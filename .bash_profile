@@ -49,6 +49,7 @@ export PATH="./bin:$HOME/bin:$PATH"
 if which plenv > /dev/null; then eval "$(plenv init -)"; fi
 
 ######### pyenv ##########
+export PYENV_ROOT=/usr/local/opt/pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 #### Riak ####
