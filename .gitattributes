@@ -1,0 +1,3 @@
+#pattern  filter=crypt diff=crypt
+library/application/sublime/user/GitHub.sublime-settings filter=crypt diff=crypt
+library/application/sublime/user/SublimeGit.sublime-settings filter=crypt diff=crypt

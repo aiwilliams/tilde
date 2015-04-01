@@ -55,6 +55,12 @@ ln -svfh $PWD/.vim/ $HOME/.vim
 ln -sfv $PWD/.vimrc $HOME/.vimrc
 ln -sfv $PWD/.gvimrc $HOME/.gvimrc
 
+#######################
+#  Sublime Text 3
+#######################
+ln -sfv $PWD/library/application/sublime/user/GitHub.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/GitHub.sublime-settings
+ln -sfv $PWD/library/application/sublime/user/Preferences.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+ln -sfv $PWD/library/application/sublime/user/SublimeGit.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/SublimeGit.sublime-settings
 
 #######################
 #  rbenv
