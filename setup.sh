@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Allow high key repeat rate
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
 ln -svfh $PWD/bin/ $HOME/bin
 ln -svfh $PWD/lib/ $HOME/lib
 
