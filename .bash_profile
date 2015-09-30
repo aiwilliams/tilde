@@ -25,6 +25,10 @@ export DEBUSERNAME="aiwilliams"
 export DEBFULLNAME="Adam Williams"
 export DEBEMAIL="adam@thewilliams.ws"
 
+#### Go ####
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 ######### MacVim ##########
 defaults write org.vim.MacVim MMVerticalSplit 1
 defaults write org.vim.MacVim MMZoomBoth 1
